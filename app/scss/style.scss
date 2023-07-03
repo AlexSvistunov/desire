@@ -46,3 +46,164 @@
     }
 }
 
+
+
+.footer {
+    background-color: #DFDFDF;
+
+    &__top {
+        padding: 60px 90px 80px 0;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__touch {
+        width: 537px;
+
+    }
+
+    &__touch-link {
+        display: inline-block;
+        @extend %title-font;
+        color: $title;
+        left: 23px;
+        margin-bottom: 15px;
+    }
+
+
+    &__touch-text {
+        margin-bottom: 15px;
+    }
+
+    &__touch-mail {
+        position: relative;
+        display: inline-block;
+        padding-left: 30px;
+        font-size: 14px;
+        color: $title;
+        font-weight: 600;
+        margin-bottom: 22px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 16px;
+            height: 16px;
+            left: 0;
+            background-image: url('../images/icons/mail.svg');
+            background-repeat: no-repeat;
+            top: 6px;
+        }
+    }
+
+    &__touch-input {
+        width: 340px;
+        padding: 6px 10px 6px 18px;
+        border-radius: 21px;
+        margin-right: 10px;
+        border-color: #383636;
+        &::placeholder {
+            color: #A1A1A1;
+            font-size: 16px;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
+        }
+    }
+
+    &__touch-btn {
+        display: inline-block;
+        background-color: $accent;
+        color: #fff;
+        text-align: center;
+        padding: 6px 60px;
+        border-radius: 21px;
+    }
+
+    &__items {
+
+    }
+
+    &__item {
+        font-weight: 600;
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+
+    &__link {
+        color: #707070;
+        position: relative;
+        padding-left: 30px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            background-repeat: no-repeat;
+            width: 16px;
+            height: 16px;
+            left: 0;
+            top: 3px;
+        }
+    }
+
+    &__link--facebook::before {
+        background-image: url('../images/icons/facebook.svg');
+        background-repeat: no-repeat;
+
+    }
+
+    &__link--instagram::before {
+        background-image: url('../images/icons/instagram.svg');
+        background-repeat: no-repeat;
+        
+    }
+
+
+    &__link--pinterest::before {
+        background-image: url('../images/icons/Pinterest.svg');
+        background-repeat: no-repeat;
+        
+    }
+
+
+    &__link--whatsapp::before {
+        
+        background-image: url('../images/icons/whatsapp.svg');
+        background-repeat: no-repeat;
+    }
+
+
+    &__link--youtube::before {
+        background-image: url('../images/icons/youtube.svg');
+        background-repeat: no-repeat;
+        width: 18px;
+        
+    }
+
+    &__links {
+        
+    }
+
+    &__links-item {
+        margin-bottom: 15px;
+    }
+
+    &__links-link {
+        color: #707070;
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+
+    &__bot {
+        background-color: #383636;
+        padding: 42px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #A1A1A1;
+    }
+
+}
